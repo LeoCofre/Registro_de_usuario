@@ -102,9 +102,7 @@ fun validarCorreo(correo: String): Boolean {
     return correo.matches("[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}".toRegex())
 }
 
-/*fun validarSistemaSalud(sistemaSalud: String): Boolean {
-    return sistemaSalud in listOf("fonasa", "isapre", "particular")
-}*/
+
 
 fun validarSistema(sistemaSalud: String): Boolean {
     if (sistemaSalud.uppercase().lowercase() == "Fonasa" || sistemaSalud.uppercase()
